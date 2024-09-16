@@ -14,6 +14,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    background-color: rgb(10, 10, 10);
+    z-index: 1;
 }
 
 html {
@@ -21,7 +23,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(150, 150, 150);
   font-weight: 500;
 }
 
@@ -51,7 +53,7 @@ nav {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   text-decoration-color: white;
 }
@@ -65,6 +67,7 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  color: white;
 }
 
 .logo:hover {
@@ -157,6 +160,7 @@ section {
   padding-top: 4vh;
   height: 96vh;
   margin: 0 10rem;
+  margin-bottom: 20vh;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -202,6 +206,8 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+  color: rgb(255, 255, 255);
+
 }
 
 #socials-container {
@@ -216,6 +222,8 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  background-color: white;
+  border-radius: 50%;
 }
 
 /* Buttons */
@@ -235,28 +243,21 @@ section {
 }
 
 .btn-color-1, .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: rgb(200, 200, 200) 0.1rem solid;
+  color: white;
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
   cursor: pointer;
 }
 
-.btn-color-1, .btn-color-2:hover {
+.btn-color-1:hover, .btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
 
-.btn-color-1:hover {
-  background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
+.btn-color-1, .btn-color-2 {
   background: none;
-}
-
-.btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 .btn-container {
@@ -278,14 +279,19 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  display: flex;
 }
 
 .about-containers, .about-details-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .about-pic {
   border-radius: 2rem;
+  width: 100%;
+  height: 100%;
+  margin: auto;
 }
 
 .arrow {
@@ -296,22 +302,27 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  flex: 1 1 30%;
   background: white;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  box-sizing: border-box;
 }
 
 .section-container {
-  gap: 10rem;
-  height: 50%;
+  gap: 1rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-around; /* Distribute space between items */
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .section__pic-container {
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 500px;
   margin: auto 0;
 }
 
@@ -339,7 +350,7 @@ section {
   text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 2.5rem;
+  gap: 5rem;
   justify-content: space-around;
 }
 
@@ -393,8 +404,9 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: 1px solid rgb(50, 50, 50);
-  background: rgb(250, 250, 250);
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
   margin: 2rem auto;
   padding: 0.5rem;
 }
@@ -414,6 +426,8 @@ article .icon {
 .contact-icon {
   cursor: default;
   height: 5rem;
+  background-color: white;
+  border-radius: 50%;
 }
 
 /*Footer section*/
@@ -425,4 +439,32 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Rounding images */
+.front-page-img {
+  border-radius: 50%;
+}
+
+/* cool space stuff */
+.main{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 2px;
+  width: 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: -28vw 48vh 1px 1px #fff,4vw -18vh 3px 0px #fff,46vw -48vh 1px 2px #fff,-34vw -32vh 3px 0px #fff,30vw 29vh 3px 2px #fff,-35vw -13vh 1px 0px #fff,-10vw 21vh 0px 2px #fff,15vw -46vh 0px 1px #fff,7vw 8vh 0px 2px #fff,-48vw -15vh 2px 0px #fff,-39vw 12vh 0px 3px #fff,39vw -1vh 2px 2px #fff,-32vw -24vh 1px 1px #fff,-16vw 12vh 0px 1px #fff,-44vw 29vh 2px 2px #fff,4vw -12vh 0px 1px #fff,24vw 10vh 2px 1px #fff,16vw -34vh 0px 2px #fff,-43vw -47vh 2px 3px #fff,49vw 16vh 0px 0px #fff,12vw 41vh 2px 2px #fff,29vw -5vh 0px 3px #fff,48vw 12vh 1px 1px #fff,10vw -20vh 0px 0px #fff,50vw -32vh 0px 1px #fff,-10vw -8vh 2px 2px #fff,-33vw -49vh 0px 3px #fff,-17vw 18vh 2px 0px #fff,29vw -34vh 1px 2px #fff,23vw -15vh 0px 0px #fff,2vw -15vh 1px 2px #fff,11vw -8vh 1px 1px #fff,49vw -29vh 2px 1px #fff,-14vw -39vh 0px 3px #fff,-12vw 29vh 1px 3px #fff,-10vw 15vh 0px 3px #fff,44vw 28vh 3px 2px #fff,21vw 26vh 3px 1px #fff,-25vw 17vh 0px 2px #fff,-15vw 23vh 2px 2px #fff,-33vw -20vh 0px 1px #fff,34vw -36vh 1px 1px #fff,-43vw 46vh 1px 1px #fff,28vw -23vh 1px 2px #fff,41vw -1vh 0px 3px #fff,-7vw -37vh 1px 0px #fff,-50vw 38vh 0px 0px #fff,-35vw -10vh 1px 2px #fff,-39vw 31vh 0px 2px #fff,-37vw 27vh 3px 0px #fff,-49vw -21vh 2px 2px #fff,-48vw -25vh 3px 0px #fff,24vw 50vh 2px 0px #fff,19vw 32vh 2px 2px #fff,-30vw 27vh 0px 3px #fff,-4vw -19vh 1px 2px #fff,5vw 17vh 3px 0px #fff,16vw 8vh 2px 1px #fff,-26vw -42vh 2px 3px #fff,-21vw 5vh 0px 2px #fff,19vw -33vh 3px 0px #fff,16vw 45vh 2px 2px #fff,22vw -22vh 2px 0px #fff,22vw 13vh 1px 1px #fff,-38vw 45vh 0px 2px #fff,-49vw 25vh 0px 2px #fff,45vw -22vh 2px 1px #fff,2vw 11vh 1px 3px #fff,12vw -32vh 1px 1px #fff,-2vw 47vh 2px 0px #fff,-16vw -6vh 2px 3px #fff,48vw -39vh 2px 2px #fff,-45vw 29vh 1px 2px #fff,10vw -13vh 3px 0px #fff,15vw 7vh 0px 0px #fff,22vw -34vh 1px 0px #fff,-14vw -28vh 1px 0px #fff,-9vw -26vh 2px 2px #fff,0vw -24vh 2px 2px #fff,37vw 14vh 1px 1px #fff,14vw 38vh 1px 2px #fff,37vw 34vh 2px 2px #fff,0vw -14vh 2px 3px #fff,-16vw -45vh 3px 0px #fff,-26vw 24vh 1px 1px #fff,37vw 37vh 0px 3px #fff,44vw 18vh 1px 2px #fff,13vw 44vh 2px 3px #fff,18vw 0vh 0px 2px #fff,12vw -9vh 0px 1px #fff,-42vw 37vh 3px 3px #fff,-49vw -24vh 3px 2px #fff,1vw -33vh 3px 2px #fff,38vw 27vh 3px 0px #fff,36vw -11vh 3px 3px #fff,-7vw 26vh 0px 0px #fff,-36vw 23vh 2px 2px #fff,32vw 39vh 2px 2px #fff,24vw -8vh 0px 0px #fff,10vw -46vh 0px 3px #fff;
+  z-index: -1;
+  animation: zoom 10s alternate infinite;
+}
+
+@keyframes zoom {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.5);
+  }
 }
