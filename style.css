@@ -284,6 +284,7 @@ section {
 
 .about-containers, .about-details-container {
   display: flex;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 
@@ -307,7 +308,8 @@ section {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
-  text-align: center;
+  text-align: start;
+  justify-content: flex-start;
   box-sizing: border-box;
 }
 
@@ -341,24 +343,20 @@ section {
 
 .experience-details-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
 .article-container {
-  display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 5rem;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  gap: 2vw;
 }
 
 article {
   display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+  flex: 1;
+  gap: 10px;
 }
 
 article .icon {
